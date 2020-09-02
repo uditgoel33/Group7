@@ -1,10 +1,10 @@
-## Group7
+# Group7
 Capstone project for Masters of Data Science students related to asset identification and tagging.
 
-# Outline:
+## Outline:
 the purpose of this project is to develop a model that accurately identifies one or more asset types from an as-built drawing file and then generate a tabularized dataset on their locations.
 
-# Contents:
+## Contents:
 
 A - asset_finder: code for the identification of desired assets.
 
