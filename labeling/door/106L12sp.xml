@@ -1,0 +1,26 @@
+<annotation>
+	<folder>door</folder>
+	<filename>106L12sp.png</filename>
+	<path>E:\png map\door\106L12sp.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4232</width>
+		<height>2800</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>296</xmin>
+			<ymin>678</ymin>
+			<xmax>363</xmax>
+			<ymax>746</ymax>
+		</bndbox>
+	</object>
+</annotation>
