@@ -256,6 +256,7 @@ def _main_(args):
     ###############################
     callbacks = create_callbacks(config['train']['saved_weights_name'], config['train']['tensorboard_dir'], infer_model)
 
+    tf.config.run_functions_eagerly(True)
     train_model.fit_generator(
         generator        = train_generator, 
         steps_per_epoch  = len(train_generator) * config['train']['train_times'], 
