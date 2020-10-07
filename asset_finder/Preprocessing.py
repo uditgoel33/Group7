@@ -15,9 +15,9 @@ class Preprocessing:
     
     
         
-    def threshold(self,change=False):
+    def convert_to_binary(self,change=False):
         img_array = self.get_array()
-        rest, thresh2 = cv2.threshold(img_array,10,230,cv2.THRESH_BINARY_INV)
+        rest, thresh2 = cv2.threshold(img_array,10,230,cv2.THRESH_BINARY)
         if not change:
             return thresh2
         else:
@@ -111,7 +111,7 @@ class Preprocessing:
                 m = self.slice_matrix[i,j,:]
                 if  m != [0,0,0]:
                     ph,pv = m[0],m[1]
-                    if ((ph = pv) or ((ph > 1) and 2*ph < pv)):
+                    if ((ph == pv) or ((ph > 1) and 2*ph < pv)):
                         M[i,j] = ph
                     else:
                         M[i,j] = (ph + pv) / 2.0
@@ -127,3 +127,61 @@ class Preprocessing:
        
         self.slice_matrix = np.dstack((ph,pv))
         return self.slice_matrix
+    
+    def binary_erosion(self, nerosions=4, ndilations=3, kernel_size=2): #This step helps in extracting all the thick wall components. 
+        image = self.convert_to_binary()
+        kernel = np.ones((kernel_size,kernel_size),np.uint8)
+        erosion = cv2.erode(image,kernel, iterations = nerosions)
+        dilation = cv2.dilate(erosion, kernel, iterations = ndilations )
+        
+        return dilation
+    def get_contours(self):
+        text = self.image
+
+        _, contours, _ = cv2.findContours(text, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+        ctr = np.zeros(text.shape, dtype=np.uint8)
+        for contour in contours:
+            area = cv2.contourArea(contour)
+            if area > 0:
+                cv2.drawContours(ctr, contour, -1, (255, 0, 0), 2)
+        return ctr
+
+
+
+
+class TextReading(Preprocessing):
+    def detect_text_boxes(self, boxes=False):
+        img = self.image
+        h, w = img.shape # assumes color image
+
+       
+        boxes = pytesseract.image_to_boxes(img, lang='eng', \
+                config='--psm 11') # also include any config options you use
+
+        
+        for b in boxes.splitlines():
+            b = b.split(' ')
+            img = cv2.rectangle(img, (int(b[1]), h - int(b[2])), (int(b[3]), h - int(b[4])), (255, 0, 0), 2)
+
+       
+        if not boxes:
+            return img
+        else:
+            return boxes
+    
+    def remove_text_boxes(self):
+        img = self.image
+        h, w = img.shape
+        img = Image.fromarray(img)
+        boxes = self.detect_text_boxes(boxes=True)
+        
+        
+        for b in boxes.splitlines():
+            b = b.split(' ')
+            blank_image = 255*np.ones((int(b[3])-int(b[1]), int(b[4])-int(b[2])))
+            blank = Image.fromarray(blank_image)
+            img.paste(blank, (int(b[1]), h-int(b[4])))
+        self.image = img
+        return img
+            
+        
