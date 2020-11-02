@@ -1,0 +1,50 @@
+<annotation>
+	<folder>split map</folder>
+	<filename>144Gsp-8.png</filename>
+	<path>E:\png map_处理后\split map\144Gsp-8.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1315</width>
+		<height>968</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>598</xmin>
+			<ymin>1</ymin>
+			<xmax>651</xmax>
+			<ymax>40</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1214</xmin>
+			<ymin>61</ymin>
+			<xmax>1269</xmax>
+			<ymax>121</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1211</xmin>
+			<ymin>408</ymin>
+			<xmax>1266</xmax>
+			<ymax>468</ymax>
+		</bndbox>
+	</object>
+</annotation>

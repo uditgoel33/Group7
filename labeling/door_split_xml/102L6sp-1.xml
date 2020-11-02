@@ -1,0 +1,50 @@
+<annotation>
+	<folder>split map</folder>
+	<filename>102L6sp-1.png</filename>
+	<path>E:\png map_处理后\split map\102L6sp-1.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>923</width>
+		<height>443</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>560</xmin>
+			<ymin>335</ymin>
+			<xmax>623</xmax>
+			<ymax>395</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>680</xmin>
+			<ymin>341</ymin>
+			<xmax>743</xmax>
+			<ymax>407</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>336</xmin>
+			<ymin>341</ymin>
+			<xmax>389</xmax>
+			<ymax>408</ymax>
+		</bndbox>
+	</object>
+</annotation>

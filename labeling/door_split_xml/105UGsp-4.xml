@@ -1,0 +1,50 @@
+<annotation>
+	<folder>split map</folder>
+	<filename>105UGsp-4.png</filename>
+	<path>E:\png map_处理后\split map\105UGsp-4.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1515</width>
+		<height>581</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>361</xmin>
+			<ymin>41</ymin>
+			<xmax>398</xmax>
+			<ymax>103</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>303</xmin>
+			<ymin>1</ymin>
+			<xmax>347</xmax>
+			<ymax>47</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1374</xmin>
+			<ymin>207</ymin>
+			<xmax>1432</xmax>
+			<ymax>283</ymax>
+		</bndbox>
+	</object>
+</annotation>

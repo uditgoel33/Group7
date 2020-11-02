@@ -1,0 +1,50 @@
+<annotation>
+	<folder>split map</folder>
+	<filename>144L7 Plant sp-3.png</filename>
+	<path>E:\png map_处理后\split map\144L7 Plant sp-3.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1402</width>
+		<height>798</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>728</xmin>
+			<ymin>638</ymin>
+			<xmax>783</xmax>
+			<ymax>710</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>780</xmin>
+			<ymin>639</ymin>
+			<xmax>835</xmax>
+			<ymax>711</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>960</xmin>
+			<ymin>644</ymin>
+			<xmax>1015</xmax>
+			<ymax>716</ymax>
+		</bndbox>
+	</object>
+</annotation>

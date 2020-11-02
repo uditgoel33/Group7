@@ -1,0 +1,26 @@
+<annotation>
+	<folder>split map</folder>
+	<filename>103Gsp-4.png</filename>
+	<path>E:\png map_处理后\split map\103Gsp-4.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1256</width>
+		<height>1045</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>door</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>804</xmin>
+			<ymin>866</ymin>
+			<xmax>875</xmax>
+			<ymax>916</ymax>
+		</bndbox>
+	</object>
+</annotation>
