@@ -107,14 +107,14 @@ random.shuffle(train_imgs)
 
 num_imgs = len(train_imgs)
 
-train_imgs = [s for s in all_imgs if s['imageset'] == 'trainval']
-val_imgs = [s for s in all_imgs if s['imageset'] == 'test']
+# train_imgs = [s for s in all_imgs if s['imageset'] == 'trainval']
+# val_imgs = [s for s in all_imgs if s['imageset'] == 'test']
 
 print(f'Num train samples {len(train_imgs)}')
 # print(f'Num val samples {len(val_imgs)}')
 
 data_gen_train = data_generators.get_anchor_gt(train_imgs, classes_count, C, nn.get_img_output_length, K.image_data_format(), mode='train')
-data_gen_val = data_generators.get_anchor_gt(val_imgs, classes_count, C, nn.get_img_output_length,K.common.image_dim_ordering(), mode='val')
+# data_gen_val = data_generators.get_anchor_gt(val_imgs, classes_count, C, nn.get_img_output_length,K.common.image_dim_ordering(), mode='val')
 
 if K.image_data_format() == 'channels_first':
 	input_shape_img = (3, None, None)
